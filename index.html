@@ -34,8 +34,8 @@
             </li>
             <li class="nav__item">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeb5GyJFm8717mgmQt0U6OjLiOqrzNUKu4euyFEDotvPnOjxw/viewform?usp=sf_link&hl=en"
-                class="nav__link"
+                href=""
+                class="nav__link form-link"
                 target="_blank"
                 >Apply</a
               >
@@ -71,8 +71,8 @@
               </li>
               <li class="mob-nav__item">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeb5GyJFm8717mgmQt0U6OjLiOqrzNUKu4euyFEDotvPnOjxw/viewform?usp=sf_link&hl=en"
-                  class="mob-nav__link"
+                  href=""
+                  class="mob-nav__link form-link"
                   target="_blank"
                   >Apply</a
                 >
@@ -91,23 +91,23 @@
         <div class="container">
           <div class="hero__content">
             <div class="date-time-wrapper">
-              <p class="date">25 FEB</p>
+              <p class="date" id="eventDate"></p>
               <!-- <p class="time">10PM - 18PM</p> -->
-              <p class="registration">REGISTRATION CLOSES ON 25 JAN</p>
+              <p class="registration" id="registrationStatus"></p>
 
               <div class="decorative-line"></div>
             </div>
-            <h1>DUBAI YOUNG VIRTUOSO FESTIVAL 2024</h1>
+            <h1>DUBAI YOUNG VIRTUOSO FESTIVAL <span id="eventYear"></span></h1>
             <div class="tagline-wrapper">
               <div class="decorative-line"></div>
             </div>
-            <div class="location">
-              <p>DUBAI,<br />SILICON OASIS,<br />HALISE ACADEMY THEATRE</p>
+            <div class="location" id="eventLocation">
+              <p></p>
             </div>
             <div class="apply-btn-wrapper">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeb5GyJFm8717mgmQt0U6OjLiOqrzNUKu4euyFEDotvPnOjxw/viewform?usp=sf_link&hl=en"
-                  class="apply-btn"
+                  href=""
+                  class="apply-btn form-link"
                   target="_blank"
                   >Apply Now</a
                 >
@@ -242,6 +242,17 @@
         <p>© 2023 Dubai Young Virtuoso Festival</p>
       </div>
     </footer>
+    <div id="modal-backdrop" class="modal-backdrop">
+      <div class="modal">
+          <div class="modal-header">
+              <span class="modal-title">Registration Closed</span>
+              <button class="modal-close" aria-label="Close modal">&times;</button>
+          </div>
+          <div class="modal-body">
+              <p>Sorry, the registration period for this event has ended.</p>
+          </div>
+      </div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>
